@@ -1,0 +1,71 @@
+.main_login_sinup_page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  height: 100vh;
+}
+.main_login_sinup_page .section_login_sinup .form {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 40px 10px;
+}
+.main_login_sinup_page .section_login_sinup .form .input_field {
+  padding: 10px 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3215686275);
+  color: #fff;
+  font-weight: bold;
+}
+.main_login_sinup_page .section_login_sinup .form .input_field::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6235294118);
+}
+.main_login_sinup_page .section_login_sinup .form .input_field::placeholder {
+  color: rgba(255, 255, 255, 0.6235294118);
+}
+.main_login_sinup_page .section_login_sinup .head_of_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.main_login_sinup_page .section_login_sinup .select_state {
+  display: flex;
+  gap: 30px;
+}
+.main_login_sinup_page .section_login_sinup .select_state .Sign_in_button, .main_login_sinup_page .section_login_sinup .select_state .SignUp_button {
+  padding: 10px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  background: #0f2027;
+  color: #fff;
+  font-weight: bold;
+}
+.main_login_sinup_page .section_login_sinup .headrer_form {
+  color: white;
+  font-weight: bold;
+}
+.main_login_sinup_page .section_login_sinup .submit_button {
+  background: #0f2027;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.main_login_sinup_page .Text_Under_image {
+  color: rgba(255, 255, 255, 0.4784313725);
+  font-size: 18px;
+  text-align: center;
+}
+.main_login_sinup_page .social_label {
+  background-color: rgba(255, 255, 255, 0.2117647059);
+  padding: 7px;
+  border-radius: 20px;
+  cursor: pointer;
+}/*# sourceMappingURL=LoginSignUp.scoped.css.map */

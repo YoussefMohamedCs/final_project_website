@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   z-index: 99;
+  transition: all 0.9s ease-in-out;
   width: 100%;
   padding: 20px 0px;
 }
@@ -40,4 +41,9 @@
 .nav__main .nav__list li a:hover::before {
   width: 70%;
   height: 2px;
+}
+
+.nav__style {
+  background-color: rgba(7, 168, 136, 0.2745098039);
+  transition: all 0.5s ease-in-out;
 }/*# sourceMappingURL=Navbar.scoped.css.map */

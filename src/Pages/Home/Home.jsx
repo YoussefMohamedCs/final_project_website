@@ -1,7 +1,32 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Home.scoped.css"
 import Timeline from  "../../Components/Timeline/Timeline"
+import { FaWindows, FaApple, FaLinux, FaDesktop, FaDownload } from "react-icons/fa";
+
 export default function Home() {
+const cards = [
+  {
+    icon: <FaWindows />,
+    title: "Desktop",
+    platform: "Windows",
+    text:
+      "Download the Windows version and explore everything offline. It's quick to install, easy to use, and built to keep you connected—anytime, anywhere.",
+  },
+  {
+    icon: <FaApple />,
+    title: "Desktop",
+    platform: "Mac",
+    text:
+      "Use a Mac, works smoothly on macOS too. Enjoy a clean design and fast performance made for your Apple device.",
+  },
+  {
+    icon: <FaLinux />,
+    title: "Desktop",
+    platform: "Linux",
+    text:
+      "Use a Linux, lightweight and runs great on most distributions. Built for speed, privacy, and full control.",
+  },
+];
   return (
   <div className="main__section ">
 
@@ -29,6 +54,37 @@ export default function Home() {
     <Timeline />
         </div>
     </div>
-  </div>
+
+
+     <section className="download">
+      <h2>
+        Transform Your <span>Communication</span>
+      </h2>
+      <p className="subtitle">with Instant Connectivity</p>
+      <p className="desc">
+        Install desktop app on all your devices to stay engaged and continue
+        every conversation.
+      </p>
+
+      <div className="cards">
+        {cards.map((card, index) => (
+          <div className="card" key={index}>
+            <div className="icon">{card.icon}</div>
+
+            <h3>{card.title}</h3>
+            <h4>{card.platform}</h4>
+
+            <p>{card.text}</p>
+
+            <button>
+              <FaDownload />
+              Download
+            </button>
+          </div>
+        ))}
+      </div>
+    </section>
+    </div>
+
   )
 }

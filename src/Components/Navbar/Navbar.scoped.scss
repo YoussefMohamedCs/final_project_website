@@ -2,6 +2,7 @@
     position: fixed;
     top: 0;
     z-index: 99;
+    transition: all 0.9s ease-in-out;
     width: 100%;
     padding: 20px 0px;
     .nav__list{
@@ -45,4 +46,9 @@ height: 0;
         }
 
     }
+}
+.nav__style{
+    background-color: #07a88846;
+    transition: all 0.5s ease-in-out;
+   
 }

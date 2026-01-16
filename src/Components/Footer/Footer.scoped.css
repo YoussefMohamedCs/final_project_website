@@ -1,0 +1,23 @@
+.wave-container {
+  position: relative;
+  width: 100%;
+padding: 90px 0px;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.wave-1 {
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.wave-2 {
+  z-index: 2;
+  opacity: 0.6;
+}

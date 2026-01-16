@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Cursor from "../src/Components/Cursor/Cursor"
 
 import { createBrowserRouter, Navigate, RouterProvider  } from 'react-router-dom';
 import Home from './Pages/Home/Home';
@@ -21,6 +21,7 @@ function App() {
   ])
   return (
     <>
+    {/* <Cursor /> */}
     <RouterProvider router={router} />
     </>
   );

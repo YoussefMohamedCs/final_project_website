@@ -1,11 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Navbar.scoped.css"
 import { RxAvatar } from "react-icons/rx";
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
+  const [navStyle , setnav] = useState()
+useEffect(()=>{
+window.addEventListener("scroll" , ()=>{
+  let windowScrollVar = window.scrollY
+  if(windowScrollVar >= 200){
+    setnav(true)
+    console.log("hello")
+  }else{
+    setnav(false)
+  }
+    console.log(navStyle)
+
+})
+} , [])
+
+
+
   return (
-    <div className='nav__main'>
+    <div className={navStyle ? "nav__main nav__style" : "nav__main"}>
     <div className="container-lg">
       <div className="row align-items-center justify-content-between">
         <div className="col-lg-1 d-flex align-items-center jsutify-content-center">

@@ -29,7 +29,7 @@ export default function AnimatedTimeline() {
         // Calculate how much of timeline has been scrolled
         const scrolled = Math.max(0, triggerPoint - rect.top);
         const total = rect.height;
-        const percent = Math.min(105, Math.max(0, (scrolled / total) * 140));
+        const percent = Math.min(104, Math.max(0, (scrolled / total) * 100));
         setLineHeight(percent);
       } else if (rect.top > triggerPoint) {
         // Timeline hasn't reached trigger point yet
@@ -51,11 +51,11 @@ export default function AnimatedTimeline() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-900 py-16 px-4">
+    <div className="min-h-screen bg-gray-900 px-4">
       <h1 className="text-5xl font-bold text-center mb-5 text-white" style={{"fontSize" : "40px" , "fontWeight" : "bolder"}}>Road Map</h1>
 
 
-      <div ref={timelineRef} className="max-w-6xl mx-auto relative" style={{ paddingTop: '40px', paddingBottom: '40px', minHeight: '200vh' }}>
+      <div ref={timelineRef} className="max-w-6xl mx-auto relative" style={{ paddingTop: '40px', paddingBottom: '40px', minHeight: '120vh' }}>
         {/* Gray background line */}
         <div style={{
           position: 'absolute',

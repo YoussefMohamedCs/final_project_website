@@ -13,6 +13,7 @@ export default function LoginSignup() {
     var text = 10;
     }else{
  var test = 20;
+ var hello = "test"
     }
   }
   return (

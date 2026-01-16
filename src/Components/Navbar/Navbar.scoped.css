@@ -1,0 +1,43 @@
+.nav__main {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  padding: 20px 0px;
+}
+.nav__main .nav__list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav__main .nav__list li {
+  padding: 5px 20px;
+  margin: 0;
+}
+.nav__main .nav__list li a {
+  text-decoration: none;
+  padding: 5px 20px;
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+.nav__main .nav__list li a::before {
+  content: "";
+  width: 0;
+  height: 0;
+  background-color: var(--button_in_main_background);
+  position: absolute;
+  top: 100%;
+  z-index: -1;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.nav__main .nav__list li a:hover::before {
+  width: 70%;
+  height: 2px;
+}/*# sourceMappingURL=Navbar.scoped.css.map */

@@ -16,3 +16,14 @@ h1 , h2 , h3 , h4 , h5 , h6 , p {
   padding: 0 !important;
   text-transform: capitalize;
 }
+
+:root{
+  --back_ground_color : linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  --button_back_ground : #0f2027;
+  --button_color_text : #ffff;
+  --highlight_text : #ffffff ;
+  --button_in_main_background : #07a889;
+  --button_in_main_color_text : #121330;
+   --back_ground_color_line: linear-gradient(135deg, #333333, #747474, #ffffff);
+;
+}

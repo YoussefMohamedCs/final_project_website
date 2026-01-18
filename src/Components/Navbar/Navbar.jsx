@@ -30,13 +30,13 @@ window.addEventListener("scroll" , ()=>{
         </div>
         <div className="col-lg-7">
           <ul className='nav__list'>
-            <li><Link> Home </Link></li>
-            <li><Link>About Us </Link></li>
-            <li><Link>faculties </Link>  </li>
+            <li><Link to={'/'}> Home </Link></li>
+            <li><Link to={'about-us'}>About Us </Link></li>
+            <li><Link to={'faculties'}>faculties </Link>  </li>
           </ul>
         </div>
         <div className="col-lg-1 d-flex align-items-center justify-content-center ">
-          <RxAvatar size={'50px'} style={{"cursor":"pointer"}} />
+          <RxAvatar size={'50px'} style={{"cursor":"pointer" , "color":"#ffff"} }  />
 
         </div>
       </div>

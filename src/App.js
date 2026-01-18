@@ -7,6 +7,8 @@ import Home from './Pages/Home/Home';
 import LoginSignup from './Pages/Login&SignUp/LoginSignup';
 import Layout from './Components/Layout/Layout';
 import { Children } from 'react';
+import Aboutus from './Pages/AboutUs/Aboutus';
+import Faculties from './Pages/Faculties/Faculties';
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
       {path : 'auth' , element : <LoginSignup />} ,
    { path : '' , element : <Layout /> , children :[
   {path : '/' , element : <Home /> } ,
+    {path :"about-us" , element: <Aboutus />} ,
+    {path : "faculties" , element : <Faculties />}
     ]
     
   }

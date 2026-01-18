@@ -1,0 +1,44 @@
+.faculties__main {
+  padding: 80px 0px;
+  height: 83vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faculties__main .facultie__card {
+  background: var(--button_in_main_background);
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  padding: 40px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.5s;
+}
+.faculties__main .facultie__card h2 {
+  font-size: 22px;
+  text-align: center;
+}
+.faculties__main .facultie__card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.6s;
+}
+.faculties__main .still_unavailable {
+  background-color: rgba(7, 168, 136, 0.4117647059);
+  cursor: default;
+  position: relative;
+}
+.faculties__main .still_unavailable::before {
+  content: "unavailable";
+  background-color: red;
+  padding: 5px 10px;
+  position: absolute;
+  top: -5px;
+  font-size: 15px;
+  right: -10px;
+  border-radius: 20px;
+}/*# sourceMappingURL=Faculties.scoped.css.map */

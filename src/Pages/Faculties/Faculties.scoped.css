@@ -11,17 +11,21 @@
   height: 90%;
   border-radius: 10px;
   padding: 40px 10px;
+  text-decoration: none !important;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  color: #fff;
-  transition: all 0.5s;
 }
 .faculties__main .facultie__card h2 {
   font-size: 22px;
+  text-decoration: none !important;
   text-align: center;
+}
+.faculties__main .facultie__card {
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.5s;
 }
 .faculties__main .facultie__card:hover {
   transform: translateY(-5px);

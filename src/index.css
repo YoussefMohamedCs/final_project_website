@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: var(--back_ground_color) !important;
   height: 100% !important;
+  background-repeat: no-repeat;
 }
 
 code {
@@ -26,6 +27,64 @@ h1 , h2 , h3 , h4 , h5 , h6 , p {
   --highlight_text : #ffffff ;
   --button_in_main_background : #07a889;
   --button_in_main_color_text : #121330;
-   --back_ground_color_line: linear-gradient(135deg, #333333, #747474, #ffffff);
-;
+  --back_ground_color_line: linear-gradient(135deg, #333333, #747474, #ffffff);
 }
+/* model */
+
+.button-record{
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+}
+.text-and-audio{
+  position: fixed;
+bottom: 30px;
+  width: 100%;
+  right: 0;
+  left: 0;
+  width: 75%;
+  margin: auto;
+  /* position: relative; */
+  display: flex;
+
+
+border-radius: 30px;
+border: 1px solid #000;
+
+}
+.text-write{
+  width: 100%;
+  border-radius: 30px;
+  padding: 20px;
+  font-size: 25px;
+}
+.userMessage{
+  background-color: rgba(89, 0, 255, 0.548); 
+   /* background: var(--back_ground_color_line); */
+ margin-bottom: 20px;
+color: #ffffff;
+border-radius: 20px;
+padding: 10px 20px;
+font-size: 20px;
+font-weight: bolder;
+text-align: right;
+min-width: none;
+}
+.LLMtext{
+  text-align: left;
+  /* background-color: rgba(38, 38, 202, 0.685);  */
+  background: var(--button_in_main_background);
+ margin-bottom: 20px;
+ color: #ffffff;
+padding: 10px 20px;
+font-size: 20px;
+font-weight: bolder;
+  border-radius: 20px;
+  text-align: left;
+}
+
+
+/* model end */

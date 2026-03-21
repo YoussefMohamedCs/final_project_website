@@ -6,6 +6,7 @@ import UserComponent from './Components/UserComponent';
 import LLMcomponent from './Components/LLMcomponent';
 import  {OpenAI}  from "openai";
 import { useNavigate } from 'react-router-dom';
+import BackArrow from '../Components/BackArrow/BackArrow';
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
 
@@ -127,6 +128,7 @@ useEffect(()=>{
   return (
 
 <>
+<BackArrow path={"/faculties/cs/database/"} />
 {sqlOrEr == "" ? <div className='d-flex align-items-center justify-content-center' style={{position : "fixed" , width:"100%" , height:"100vh"}} > <div style={{width:"600px" , height:"300px" , background : "var( --button_in_main_background)" , borderRadius:"25px" , display:"flex" , alignItems:"center"   }}> <div style={{display : "flex" , flexDirection:"column" , alignItems:"center" , justifyContent:"center" , width:"100%" , gap:"20px"}}> <button style={{width:"400px" , borderRadius:"25px" , outline:"none" , border:"none" , fontSize:"25px", fontWeight:"bolder" , background:"var(--button_back_ground)" , color:"#ffff" , padding:"10px 0px"}} onClick={handleER} >ER</button>   <button style={{width:"400px" , borderRadius:"25px" , outline:"none" , border:"none" , fontSize:"25px", fontWeight:"bolder" , background:"var(--button_back_ground)" , color:"#ffff" , padding:"10px 0px"}} onClick={handleQuery}>Query</button>  </div>  </div></div> : <></> }
     <div style={{ padding: '2rem', fontFamily: 'sans-serif' , minHeight : "83vh" , padding:"50px 200px"}}>
 

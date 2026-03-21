@@ -12,7 +12,7 @@ export default function Faculties() {
 </Link>
 </div>
 <div className="col-lg-4">
-    <Link className="facultie__card" to={'pharmacy'}>
+    <Link className="facultie__card still_unavailable">
       <h2>Faculty of Pharmacy</h2>
 
     </Link>

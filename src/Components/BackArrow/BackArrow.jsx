@@ -6,7 +6,7 @@ export default function BackArrow({path}) {
   return (
     <div>
         <Link to={path}>
-      <FaCircleArrowLeft size={"70px"} style={{"color" : "var(--button_in_main_background)", "borderRadius":"100%" , "position" : "absolute" , "top" : "50px" , "left" : "50px"}}/>
+      <FaCircleArrowLeft size={"70px"} style={{"color" : "var(--button_in_main_background)", "borderRadius":"100%" , "position" : "absolute" , "top" : "50px" , "left" : "50px" , "zIndex" : "999"}}/>
 </Link>
     </div>
   )
